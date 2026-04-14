@@ -1,8 +1,8 @@
 # E-Caprichito — Frontend
 
-Frontend del e-commerce de El Caprichito, un local que ya opera de forma presencial y que está dando el salto a venta online. No es un proyecto de ejemplo: va a producción, con clientes reales y plata real de por medio.
+Frontend del e-commerce de El Caprichito, un local que opera de forma presencial y que se está preparando para vender online. Está en fase de prelanzamiento: no es un proyecto de ejemplo, el objetivo es que salga a clientes reales.
 
-Lo hice solo, de cero, y lo uso también como el proyecto donde me doy el lujo de practicar arquitectura y patrones que no cabían en trabajos anteriores.
+Lo estoy armando de cero y me sirve también para trabajar con calma sobre decisiones de arquitectura que en proyectos con deadlines apretados no siempre se pueden cuidar.
 
 El backend vive en un repo aparte: [pabloAmbrosio/e-caprichito-backend](https://github.com/pabloAmbrosio/e-caprichito-backend).
 
@@ -99,7 +99,7 @@ Uso Claude Code como parte de mi flujo — principalmente para acelerar la escri
 
 ## Estado
 
-En desarrollo activo. Lo que está en main compila y el flujo end-to-end (catálogo → carrito → checkout → pago → order) funciona contra el backend.
+En prelanzamiento. Lo que está en main compila y el flujo end-to-end (catálogo → carrito → checkout → pago → order) funciona contra el backend en entorno local.
 
 Áreas pendientes conocidas:
 - Tests automatizados (no hay suite aún)
