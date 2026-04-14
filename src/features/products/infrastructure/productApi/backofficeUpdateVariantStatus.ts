@@ -1,0 +1,17 @@
+import type { BackofficeProductDetail } from '../../domain/types';
+import { BASE_URL } from '@/shared/utils/apiConfig';
+import { authFetch } from '@/features/auth';
+import { handleApiResponse } from '@/shared/utils/apiError';
+
+export async function backofficeUpdateVariantStatus(
+  id: string,
+  variantId: string,
+  status: string,
+): Promise<BackofficeProductDetail> {
+  const response = await authFetch(`${BASE_URL}/api/backoffice/products/${id}/variants/${variantId}/status`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ status }),
+  });
+  return handleApiResponse(response);
+}
